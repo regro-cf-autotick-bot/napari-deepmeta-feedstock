@@ -1,13 +1,13 @@
 {% set name = "napari-deepmeta" %}
-{% set version = "1.2" %}
+{% set version = "2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-deepmeta-{{ version }}.tar.gz
-  sha256: dab7a521af490d865ee8aff82f41e7ec4016d43b8b3e65247cad65e401f7f0e7
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a98f4d4127f83a6a15accef6ca643b66dde8c37c92a75aabbb2b9028041837bc
 
 build:
   noarch: python
